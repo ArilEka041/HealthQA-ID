@@ -1,0 +1,441 @@
+{
+    "total": 20,
+    "data": [
+        {
+            "index": 1,
+            "question_type": "Infeksi Saluran Pernapasan Atas (ISPA)",
+            "question": "Saya seorang pria berusia 28 tahun, tinggi 172 cm, berat 68 kg. Sejak kemarin malam setelah kehujanan pulang kerja, saya mulai batuk-batuk dan hidung meler. Badannya agak pegal-pegal. Apa perlu langsung minum obat dok?",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah ada demam?",
+                    "jawaban": "Tadi pagi saya ukur 37,4 derajat, jadi ada demam ringan."
+                },
+                {
+                    "pertanyaan": "Dahaknya berwarna apa, atau batuknya masih kering?",
+                    "jawaban": "Masih kering, belum ada dahak."
+                }
+            ],
+            "triage": "rendah",
+            "ground_truth": "Common Cold (Rhinitis Viral Akut)"
+        },
+        {
+            "index": 2,
+            "question_type": "Konjungtivitis Bakterial",
+            "question": "Saya wanita 22 tahun, tinggi 158 cm, berat 52 kg. Dari tadi pagi mata kanan saya merah banget dan gatal. Sewaktu bangun tidur matanya lengket karena ada belek yang banyak dan kekuningan. Berbahaya tidak dok?",
+            "follow_up": [
+                {
+                    "pertanyaan": "Belek kuningnya muncul di kedua mata atau hanya satu?",
+                    "jawaban": "Hanya mata kanan saja."
+                },
+                {
+                    "pertanyaan": "Apakah sebelumnya ada kontak dengan orang yang matanya merah juga?",
+                    "jawaban": "Ya, teman sekantor saya minggu lalu matanya merah dan sekarang sudah sembuh."
+                },
+                {
+                    "pertanyaan": "Penglihatan terasa kabur?",
+                    "jawaban": "Sedikit kabur karena beknya banyak, tapi setelah dibersihkan kembali jelas."
+                },
+                {
+                    "pertanyaan": "Apakah ada rasa nyeri dalam bola mata atau silau berlebihan?",
+                    "jawaban": "Tidak ada nyeri dalam, hanya gatal dan perih di permukaan."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Konjungtivitis Bakterial Akut"
+        },
+        {
+            "index": 3,
+            "question_type": "Gastroenteritis Akut / Keracunan Makanan",
+            "question": "Saya laki-laki 35 tahun, tinggi 168 cm, berat 75 kg. Sekitar 2 jam lalu makan nasi goreng di warung pinggir jalan. Sekarang perut mual dan sudah muntah dua kali. Apakah harus ke dokter sekarang?",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah sudah ada diare selain muntah?",
+                    "jawaban": "Belum diare, baru muntah saja."
+                },
+                {
+                    "pertanyaan": "Apakah teman yang makan bersama juga sakit?",
+                    "jawaban": "Ya, teman makan satu meja juga mengeluh mual sekarang."
+                },
+                {
+                    "pertanyaan": "Apakah ada rasa pusing hebat, lemas sampai tidak bisa berdiri, atau demam tinggi?",
+                    "jawaban": "Agak lemas dan pusing ringan, tapi masih bisa duduk dan berjalan."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Gastroenteritis Akut (Keracunan Makanan Ringan)"
+        },
+        {
+            "index": 4,
+            "question_type": "Ankle Sprain",
+            "question": "Saya wanita 19 tahun, tinggi 160 cm, berat 55 kg, mahasiswi. Tadi pagi terpeleset di tangga dan pergelangan kaki kanan langsung nyeri. Sekarang mulai bengkak dan kebiruan. Saya pikir cuma keseleo biasa, perlu ke RS tidak?",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah bisa menapak dan berjalan meski sedikit nyeri, atau sama sekali tidak bisa menahan berat badan?",
+                    "jawaban": "Sama sekali tidak bisa, setiap coba menapak langsung sangat sakit."
+                },
+                {
+                    "pertanyaan": "Bengkaknya muncul langsung setelah kejadian atau baru muncul belakangan?",
+                    "jawaban": "Langsung bengkak dalam 10 menit setelah kejadian, dan terus membesar."
+                },
+                {
+                    "pertanyaan": "Apakah saat kejadian terdengar atau terasa bunyi 'pop' atau 'krek' di sendi?",
+                    "jawaban": "Ya, terasa ada bunyi seperti 'krek' saat kaki terpuntir."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Ankle Sprain Grade II-III (Robekan Parsial hingga Total Ligamen Lateral)"
+        },
+        {
+            "index": 5,
+            "question_type": "Hipertensi Tidak Terkontrol / Silent Hypertension",
+            "question": "Saya pria 48 tahun, tinggi 170 cm, berat 88 kg, seorang pengusaha. Tadi iseng cek tensi di apotek dan hasilnya 158/98 mmHg. Saya tidak merasa apa-apa, tidak pusing, tidak sakit kepala. Apakah angka ini berbahaya atau alatnya yang salah?",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah pernah cek tekanan darah sebelumnya, dan hasilnya bagaimana?",
+                    "jawaban": "Terakhir cek sekitar 2 tahun lalu, waktu itu katanya agak tinggi tapi saya tidak lanjut ke dokter."
+                },
+                {
+                    "pertanyaan": "Apakah ada riwayat hipertensi atau stroke di keluarga?",
+                    "jawaban": "Ayah saya hipertensi dan meninggal karena stroke di usia 55 tahun."
+                },
+                {
+                    "pertanyaan": "Bagaimana kebiasaan makan dan olahraga Anda?",
+                    "jawaban": "Makan sering berlemak dan asin, hampir tidak pernah olahraga, dan merokok setengah bungkus per hari."
+                },
+                {
+                    "pertanyaan": "Apakah sering mengonsumsi kopi atau minuman energi dalam jumlah banyak?",
+                    "jawaban": "Kopi 4-5 cangkir sehari karena jam kerja panjang."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Hipertensi Stage 2 (Tidak Terkontrol, Risiko Kardiovaskular Tinggi)"
+        },
+        {
+            "index": 6,
+            "question_type": "Tension-Type Headache Kronis",
+            "question": "Saya wanita 31 tahun, tinggi 163 cm, berat 58 kg, karyawan kantoran. Hampir setiap hari kepala terasa berat dan nyeri di kedua pelipis, terutama sore hari setelah 8 jam di depan komputer. Kadang sampai sulit konsentrasi. Ini bahaya tidak?",
+            "follow_up": [
+                {
+                    "pertanyaan": "Nyeri kepalanya terasa berdenyut atau seperti ditekan atau diikat?",
+                    "jawaban": "Seperti ditekan atau diikat kencang melingkar di sekeliling kepala, tidak berdenyut."
+                },
+                {
+                    "pertanyaan": "Apakah disertai mual atau sensitif terhadap cahaya atau suara keras?",
+                    "jawaban": "Tidak mual, tidak sensitif cahaya maupun suara."
+                },
+                {
+                    "pertanyaan": "Membaik setelah istirahat dan menjauh dari layar?",
+                    "jawaban": "Ya, biasanya hilang sendiri setelah 30-45 menit istirahat."
+                }
+            ],
+            "triage": "rendah",
+            "ground_truth": "Tension-Type Headache Episodik Kronis (Dipicu Kelelahan Mata dan Postur)"
+        },
+        {
+            "index": 7,
+            "question_type": "GERD / Refluks Asam Lambung",
+            "question": "Saya pria 41 tahun, tinggi 169 cm, berat 82 kg. Sudah 2 minggu dada saya sering panas seperti terbakar terutama setelah makan dan malam hari. Kadang terasa ada yang naik ke tenggorokan. Saya pikir ini masuk angin biasa.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Rasa panasnya muncul atau makin parah saat langsung berbaring setelah makan?",
+                    "jawaban": "Ya, selalu memburuk kalau saya langsung tiduran setelah makan malam."
+                },
+                {
+                    "pertanyaan": "Apakah ada kebiasaan merokok, minum kopi banyak, atau sering makan pedas dan berlemak?",
+                    "jawaban": "Saya merokok 1 bungkus sehari, minum kopi 3 kali sehari, dan hampir setiap makan ada makanan pedas."
+                },
+                {
+                    "pertanyaan": "Apakah ada gejala suara serak di pagi hari atau batuk kering tanpa sebab jelas?",
+                    "jawaban": "Ya, suara sering serak pagi hari dan kadang batuk malam tanpa sebab."
+                },
+                {
+                    "pertanyaan": "Apakah pernah ada kesulitan menelan atau nyeri saat menelan?",
+                    "jawaban": "Tidak ada kesulitan menelan."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "GERD (Gastroesophageal Reflux Disease) dengan Gejala Ekstraesofageal"
+        },
+        {
+            "index": 8,
+            "question_type": "Dugaan Diabetes Mellitus Tipe 2",
+            "question": "Saya wanita 45 tahun, tinggi 155 cm, berat 78 kg. Belakangan ini sering sekali haus, sering buang air kecil, dan badan cepat lelah meski sudah cukup tidur. Saya kira kelelahan karena kerja keras saja.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah ada anggota keluarga yang menderita diabetes?",
+                    "jawaban": "Ya, ibu saya diabetes dan satu kakak perempuan saya juga baru-baru ini didiagnosis diabetes."
+                },
+                {
+                    "pertanyaan": "Apakah ada luka atau lecet yang terasa lama sembuhnya belakangan ini?",
+                    "jawaban": "Ada lecet kecil di kaki sejak 3 minggu lalu yang tidak kunjung menutup."
+                },
+                {
+                    "pertanyaan": "Apakah penglihatan akhir-akhir ini terasa sering kabur?",
+                    "jawaban": "Ya, kadang pandangan mendadak buram lalu normal lagi, saya kira mata lelah."
+                },
+                {
+                    "pertanyaan": "Apakah pernah cek gula darah kapan pun sebelumnya?",
+                    "jawaban": "Belum pernah sama sekali, saya takut hasilnya tidak bagus jadi sengaja dihindari."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Dugaan Diabetes Mellitus Tipe 2 (Gejala Klasik Trias DM + Faktor Risiko Tinggi, Perlu Konfirmasi GDP/GDS)"
+        },
+        {
+            "index": 9,
+            "question_type": "Insomnia Akut Situasional",
+            "question": "Saya pria 26 tahun, tinggi 175 cm, berat 65 kg, mahasiswa tingkat akhir. Sudah 4 hari ini susah sekali tidur, baru bisa terlelap jam 3-4 pagi padahal sudah tiduran sejak jam 11 malam. Siang hari jadi tidak fokus dan gampang emosi.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apa yang biasanya dipikirkan saat mencoba tidur tapi tidak bisa?",
+                    "jawaban": "Kepikiran terus soal deadline skripsi dan sidang yang tinggal beberapa minggu lagi."
+                },
+                {
+                    "pertanyaan": "Apakah mengonsumsi kopi atau menggunakan gadget sampai larut malam?",
+                    "jawaban": "Ya, saya sering minum kopi malam untuk begadang belajar dan main HP sampai jam 12 atau lebih."
+                }
+            ],
+            "triage": "rendah",
+            "ground_truth": "Insomnia Akut Situasional (Dipicu Stres Akademik dan Higiene Tidur Buruk)"
+        },
+        {
+            "index": 10,
+            "question_type": "Suspek Demam Berdarah Dengue (DBD)",
+            "question": "Saya wanita 33 tahun, tinggi 162 cm, berat 56 kg. Sudah 2 hari demam tinggi 39,5 derajat, kepala pusing, dan seluruh badan pegal-pegal terutama di belakang bola mata. Saya pikir hanya flu biasa karena musim hujan.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah ada bintik-bintik merah di kulit yang tidak hilang saat ditekan?",
+                    "jawaban": "Iya, tadi saya perhatikan ada bintik merah di lengan dan betis yang muncul hari ini."
+                },
+                {
+                    "pertanyaan": "Apakah ada mual, muntah, atau nyeri perut?",
+                    "jawaban": "Ya, mual dan sudah muntah 2 kali hari ini, perut bagian atas agak nyeri."
+                },
+                {
+                    "pertanyaan": "Apakah ada tetangga atau orang sekitar yang baru saja kena DBD?",
+                    "jawaban": "Ya, tetangga 2 rumah sebelah baru pulang dari RS karena DBD minggu lalu."
+                },
+                {
+                    "pertanyaan": "Apakah ada perdarahan seperti mimisan, gusi berdarah, atau bercak darah saat batuk?",
+                    "jawaban": "Belum ada perdarahan seperti itu, tapi tadi gusi saya terasa sedikit nyeri."
+                }
+            ],
+            "triage": "darurat",
+            "ground_truth": "Suspek Demam Berdarah Dengue (DBD) Fase Demam - Perlu Cek Trombosit dan Rawat Inap"
+        },
+        {
+            "index": 11,
+            "question_type": "Anemia Defisiensi Besi",
+            "question": "Saya wanita 24 tahun, tinggi 157 cm, berat 48 kg. Sering pusing dan mudah lelah padahal tidak banyak aktivitas. Kulit terasa pucat dan kadang jantung berdebar-debar. Saya pikir hanya kurang tidur.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah haid Anda tergolong sangat banyak atau berlangsung lebih dari 7 hari?",
+                    "jawaban": "Ya, haid saya sangat deras dan berlangsung 8-9 hari setiap bulan, sampai ganti pembalut lebih dari 5 kali sehari."
+                },
+                {
+                    "pertanyaan": "Bagaimana pola makan Anda, apakah sering makan daging merah atau sering menghindarinya?",
+                    "jawaban": "Saya hampir tidak makan daging, lebih suka sayuran dan tahu tempe."
+                },
+                {
+                    "pertanyaan": "Apakah pernah ada yang bilang wajah atau kelopak mata bagian dalam Anda terlihat pucat?",
+                    "jawaban": "Ya, teman bilang bibir saya pucat dan saat saya balik kelopak mata bawah, warnanya hampir putih."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Anemia Defisiensi Besi (Kemungkinan Akibat Menorrhagia + Asupan Besi Rendah, Perlu Cek Hemoglobin)"
+        },
+        {
+            "index": 12,
+            "question_type": "Infeksi Saluran Kemih Bawah (Sistitis)",
+            "question": "Saya wanita 30 tahun, tinggi 160 cm, berat 60 kg. Dari kemarin sering buang air kecil dan terasa panas perih saat kencing. Perut bagian bawah juga agak nyeri. Saya kira hanya efek kurang minum air.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah urin terlihat keruh, berdarah, atau berbau tidak biasa?",
+                    "jawaban": "Urin agak keruh dan baunya tidak seperti biasanya, lebih menyengat."
+                },
+                {
+                    "pertanyaan": "Apakah ada demam atau nyeri di pinggang atau punggung bagian bawah?",
+                    "jawaban": "Tidak ada demam, dan nyerinya hanya di perut bawah, tidak menjalar ke pinggang."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Infeksi Saluran Kemih Bawah (Sistitis Akut Tanpa Komplikasi)"
+        },
+        {
+            "index": 13,
+            "question_type": "Asma Bronkial Serangan Akut",
+            "question": "Saya pria 20 tahun, tinggi 173 cm, berat 62 kg, punya riwayat asma sejak kecil. Tadi pagi jogging lalu tiba-tiba napas terasa berat dan berdesis. Sudah tidak pakai inhaler 2 tahun karena merasa sembuh.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Saat ini sesaknya masih berlangsung atau sudah mereda setelah istirahat?",
+                    "jawaban": "Masih terasa sedikit berat tapi sudah jauh membaik setelah duduk istirahat 15 menit."
+                },
+                {
+                    "pertanyaan": "Apakah udara pagi tadi dingin atau Anda melewati area berdebu saat lari?",
+                    "jawaban": "Udara memang cukup dingin dan saya berlari melewati jalan berdebu."
+                },
+                {
+                    "pertanyaan": "Dalam sebulan terakhir, apakah sering batuk kering terutama malam hari atau dini hari?",
+                    "jawaban": "Ya, sering batuk kering malam hari dalam sebulan ini tapi saya abaikan karena tidak sesak."
+                },
+                {
+                    "pertanyaan": "Apakah sekarang ada sisa sesak saat berbicara atau napas masih terdengar bunyi siulan?",
+                    "jawaban": "Sedikit masih terdengar bunyi siulan halus saat napas, tapi bisa bicara kalimat penuh."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Serangan Asma Bronkial Ringan-Sedang pada Asma Persisten Tidak Terkontrol"
+        },
+        {
+            "index": 14,
+            "question_type": "Gastritis Akut Diperberat NSAID",
+            "question": "Saya pria 23 tahun, tinggi 170 cm, berat 60 kg, sering telat makan karena kuliah. Perut kiri atas terasa perih seperti ditusuk-tusuk, mual, dan kembung sudah 3 hari. Biasanya minum antasida tapi kali ini tidak mempan.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Nyerinya muncul saat perut kosong atau justru makin parah setelah makan?",
+                    "jawaban": "Lebih parah saat perut kosong dan agak mereda setelah makan, tapi tidak hilang total."
+                },
+                {
+                    "pertanyaan": "Belakangan ini apakah sering mengonsumsi obat pereda nyeri seperti ibuprofen atau aspirin?",
+                    "jawaban": "Ya, saya hampir tiap hari minum ibuprofen untuk sakit kepala karena begadang, sudah 2 minggu ini."
+                },
+                {
+                    "pertanyaan": "Apakah BAB berwarna hitam seperti ter atau pernah muntah darah?",
+                    "jawaban": "Tidak ada, BAB masih berwarna normal."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Gastritis Akut Erosif (Diperberat Konsumsi NSAID Jangka Pendek Tanpa Pelindung Lambung)"
+        },
+        {
+            "index": 15,
+            "question_type": "Benign Paroxysmal Positional Vertigo (BPPV)",
+            "question": "Saya wanita 52 tahun, tinggi 156 cm, berat 65 kg. Tadi pagi begitu bangun tidur, tiba-tiba dunia terasa berputar sangat kencang beberapa detik. Sampai jatuh ke kasur lagi. Ini sudah terjadi 3 kali hari ini. Apakah ini stroke?",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah pusingnya selalu dipicu oleh perubahan posisi kepala, seperti bangun tidur, menoleh, atau menunduk?",
+                    "jawaban": "Ya, selalu muncul saat posisi berubah, tidak pernah tiba-tiba saat diam."
+                },
+                {
+                    "pertanyaan": "Apakah ada kelemahan di tangan, kaki, atau wajah yang tidak simetris, atau sulit bicara?",
+                    "jawaban": "Tidak ada, tangan dan kaki kuat, wajah simetris, bicara normal."
+                },
+                {
+                    "pertanyaan": "Pusingnya berlangsung berapa lama setiap serangan?",
+                    "jawaban": "Hanya beberapa detik sampai kurang dari 1 menit, lalu berhenti sendiri tapi masih mual."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Benign Paroxysmal Positional Vertigo (BPPV) Kanal Posterior"
+        },
+        {
+            "index": 16,
+            "question_type": "Hipoglikemia Akut",
+            "question": "Saya pria 38 tahun, tinggi 174 cm, berat 72 kg, penderita diabetes rutin minum obat. Tiba-tiba berkeringat dingin, gemetar, dan pandangan sedikit kabur saat jam 11 siang, padahal baru minum obat diabetes tadi pagi dan belum sempat sarapan.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah hari ini memang tidak sarapan sama sekali sebelum minum obat diabetes?",
+                    "jawaban": "Tidak sarapan, langsung minum obat setelah bangun karena terburu-buru ke kantor."
+                },
+                {
+                    "pertanyaan": "Apakah sekarang masih terasa gemetar dan lemas, atau sudah membaik setelah makan sesuatu?",
+                    "jawaban": "Masih gemetar dan lemas, belum makan apa-apa sejak tadi."
+                }
+            ],
+            "triage": "darurat",
+            "ground_truth": "Hipoglikemia Akut (Akibat OAD Tanpa Asupan Makan - Butuh Koreksi Gula Segera)"
+        },
+        {
+            "index": 17,
+            "question_type": "Dermatitis Kontak Alergi",
+            "question": "Saya wanita 27 tahun, tinggi 163 cm, berat 55 kg. Tangan saya gatal, merah, dan muncul bentol-bentol kecil berair setelah pakai sabun cuci piring merek baru kemarin. Apakah cukup dioles salep saja?",
+            "follow_up": [
+                {
+                    "pertanyaan": "Apakah ruam hanya di area yang kontak langsung dengan sabun, atau sudah menyebar ke tempat lain?",
+                    "jawaban": "Hanya di punggung tangan dan jari-jari yang kena sabun, tidak menyebar."
+                },
+                {
+                    "pertanyaan": "Apakah pernah reaksi serupa terhadap produk atau bahan lain sebelumnya?",
+                    "jawaban": "Ya, dulu pernah ruam mirip saat pakai jam tangan logam selama beberapa hari."
+                },
+                {
+                    "pertanyaan": "Apakah ada gejala bengkak di wajah, bibir, atau sesak napas?",
+                    "jawaban": "Tidak ada, hanya di tangan saja, napas dan wajah normal."
+                }
+            ],
+            "triage": "rendah",
+            "ground_truth": "Dermatitis Kontak Alergi (DKA) Tangan, Dipicu Iritan Sabun Deterjen"
+        },
+        {
+            "index": 18,
+            "question_type": "Suspek Appendisitis Akut",
+            "question": "Saya pria 17 tahun, tinggi 168 cm, berat 58 kg, pelajar SMA. Dari semalam perut sakit, awalnya di pusar tapi sekarang nyerinya pindah ke perut kanan bawah. Mual dan tidak nafsu makan. Mama bilang masuk angin, tapi sakitnya makin parah.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Nyerinya makin parah saat berjalan atau batuk?",
+                    "jawaban": "Ya, sangat nyeri saat berjalan dan saat batuk, saya lebih nyaman diam membungkuk."
+                },
+                {
+                    "pertanyaan": "Apakah ada demam?",
+                    "jawaban": "Ada, tadi saya ukur 38,2 derajat."
+                },
+                {
+                    "pertanyaan": "Nyerinya sudah berapa jam, dan apakah terus makin parah atau sempat mereda?",
+                    "jawaban": "Sudah sekitar 14 jam dan terus memburuk tanpa pernah reda sama sekali."
+                }
+            ],
+            "triage": "darurat",
+            "ground_truth": "Suspek Appendisitis Akut (Perlu Evaluasi Bedah dan USG Abdomen Segera)"
+        },
+        {
+            "index": 19,
+            "question_type": "Suspek Pertusis (Batuk Rejan)",
+            "question": "Saya ibu dari anak perempuan 6 tahun, tinggi 116 cm, berat 21 kg. Anak saya batuk sudah 2 minggu. Awalnya seperti flu biasa, tapi sekarang batuknya sangat parah sampai ada bunyi 'hup' keras saat menarik napas, dan makin buruk di malam hari.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Saat batuk keras, apakah wajah anak memerah atau pernah terlihat kebiruan?",
+                    "jawaban": "Ya, wajahnya memerah parah saat batuk bertubi-tubi dan pernah sedikit terlihat keunguan."
+                },
+                {
+                    "pertanyaan": "Apakah vaksin DPT anak lengkap sesuai jadwal?",
+                    "jawaban": "Tidak lengkap, beberapa kali terlewat karena susah dibawa ke Posyandu waktu kecil."
+                },
+                {
+                    "pertanyaan": "Apakah ada anggota keluarga atau orang serumah yang juga batuk lama?",
+                    "jawaban": "Ya, kakek yang sering menemani anak saya juga batuk sudah berminggu-minggu."
+                },
+                {
+                    "pertanyaan": "Apakah setelah batuk keras anak pernah sampai muntah atau tampak kelelahan berat?",
+                    "jawaban": "Ya, hampir setiap serangan batuk malam hari anak muntah dan langsung tertidur kelelahan."
+                }
+            ],
+            "triage": "darurat",
+            "ground_truth": "Suspek Pertusis (Batuk Rejan) pada Anak dengan Imunisasi Tidak Lengkap - Perlu Isolasi dan Konfirmasi PCR"
+        },
+        {
+            "index": 20,
+            "question_type": "Suspek Demam Tifoid",
+            "question": "Saya pria 21 tahun, tinggi 172 cm, berat 63 kg, mahasiswa yang sering makan di kantin kampus. Sudah seminggu demam, anehnya lebih tinggi sore-malam dan mereda pagi hari. Perut kiri agak nyeri, lemas, dan nafsu makan turun drastis. Saya kira capek biasa.",
+            "follow_up": [
+                {
+                    "pertanyaan": "Demamnya sudah berapa hari dan apakah polanya memang selalu naik sore hari?",
+                    "jawaban": "Sudah 7 hari, dan polanya konsisten: pagi agak turun sekitar 37,5, sore naik lagi sampai 38,8-39 derajat."
+                },
+                {
+                    "pertanyaan": "Apakah ada diare atau justru sembelit?",
+                    "jawaban": "Justru sembelit, sudah 4 hari tidak BAB sama sekali."
+                },
+                {
+                    "pertanyaan": "Apakah ada teman kos atau kenalan yang baru saja kena tipes?",
+                    "jawaban": "Ya, teman satu kos baru pulang dari RS karena tipes minggu lalu dan kami sering makan di tempat yang sama."
+                },
+                {
+                    "pertanyaan": "Apakah lidah terasa kotor atau ada lapisan putih di tengah lidah?",
+                    "jawaban": "Ya, lidah saya seperti ada lapisan putih kotor di bagian tengah sejak beberapa hari ini."
+                }
+            ],
+            "triage": "menengah",
+            "ground_truth": "Suspek Demam Tifoid (Step-ladder Fever + Konstipasi + Riwayat Kontak - Perlu Uji Widal/Tubex dan Evaluasi Klinis)"
+        }
+    ]
+}
