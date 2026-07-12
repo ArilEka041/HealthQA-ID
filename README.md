@@ -118,30 +118,27 @@ THINKING_LEVEL_GEMINI_35_FLASH=high        # default: high
 
 ---
 
-## Dataset
+## 
 
-Letakkan dataset di `data/HealthQA-ID.json`.
+Letakkan  di `data/HealthQA-ID.json`.
 Format yang diharapkan: JSON object dengan key `data` berisi array of objects:
 
 ```json
 {
-    "total": 15,
+    "total": 20,
     "data": [
         {
             "index": 1,
-            "question_type": "Appendicitis",
-            "question": "Perut kanan bawah saya sakit sejak kemarin...",
+            "question_type": "Infeksi Saluran Pernapasan Atas (ISPA)",
+            "question": "Saya seorang pria berusia 28 tahun, tinggi 172 cm, berat 68 kg. Sejak kemarin.....",
             "follow_up": [
                 {
                     "pertanyaan": "Apakah ada demam?",
-                    "jawaban": ["Ya", "Tidak"]
+                    "jawaban": "Ya."
                 }
             ],
-            "triage": {
-                "level": "darurat",
-                "label": "Merah – Segera",
-                "deskripsi": "Kondisi mengancam jiwa, perlu penanganan segera."
-            }
+            "triage": "darurat",
+            "ground_truth": "Common Cold (Rhinitis Viral Akut)"
         }
     ]
 }
@@ -205,8 +202,8 @@ healthqa-eval --all --limit 5
 | File                               | Isi                                             |
 | ---------------------------------- | ----------------------------------------------- |
 | `healthqa_results.json`            | Hasil evaluasi terakhir (selalu diperbarui)     |
-| `results/<model>_<timestamp>.json` | Hasil per model + timestamp                     |
-| `results/comparison_summary.json`  | Perbandingan ringkas semua model (saat `--all`) |
+| `results/<timestamp>/<model>_<judge_model>.json` | Hasil per model + timestamp                     |
+| `results/<timestamp>/comparison_summary.json`  | Perbandingan ringkas semua model (saat `--all`) |
 
 Struktur `healthqa_results.json`:
 
@@ -216,14 +213,56 @@ Struktur `healthqa_results.json`:
     "model_key": "gemini-2.5-flash",
     "model_display": "Gemini 2.5 Flash",
     "judge_key": "gemma4-e4b-local",
+    "judge_display": "gemma4:e4b (lokal)",
+    "total_items": 20,
+    "metric_weights": {
+        "diagnosis_accuracy": 0.4,
+        "diagnosis_reasoning": 0.25,
+        "follow_up_coverage": 0.2,
+        "triage_accuracy": 0.15
+    },
     "metrics": {
-        "avg_diagnosis_accuracy": 0.75,
-        "avg_diagnosis_reasoning": 0.68,
-        "avg_follow_up_coverage": 0.6,
-        "avg_triage_accuracy": 0.8,
-        "avg_composite_score": 0.712,
-        "pass_rate": 0.85,
-        "triage_accuracy_by_label": { "...": "..." }
+        "avg_diagnosis_accuracy": 0.967,
+        "avg_diagnosis_reasoning": 0.933,
+        "avg_follow_up_coverage": 0.533,
+        "avg_triage_accuracy": 0.867,
+        "avg_composite_score": 0.857,
+        "pass_rate": 1.0,
+        "avg_latency_ms": 13631.9,
+        "total_items": 15,
+        "judge_errors": 0,
+        "diagnosis_score_distribution": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 13
+        },
+        "reasoning_score_distribution": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 4,
+            "4": 11
+        },
+        "triage_accuracy_by_label": {
+            "rendah": {
+                "total": 8,
+                "correct": 7,
+                "accuracy": 0.875
+            },
+            "menengah": {
+                "total": 5,
+                "correct": 5,
+                "accuracy": 1.0
+            },
+            "darurat": {
+                "total": 2,
+                "correct": 1,
+                "accuracy": 0.5
+            }
+        }
+    },
     },
     "results_detail": ["..."]
 }
